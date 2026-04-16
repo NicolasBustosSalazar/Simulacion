@@ -1,16 +1,33 @@
-# React + Vite
+Simulación
+* **Carrera:** Ingeniería en Sistemas de Información
+* **Stack:** React JS + Vite
+* **Función:** Implementación de algoritmos para generación de variables aleatorias.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Algoritmos Implementados
 
-Currently, two official plugins are available:
+### 1. Método de la Parte Central (Middle Square)
+Algoritmo basado en la extracción de los dígitos centrales del cuadrado de una semilla. Esta implementación incluye la lógica de ajuste por paridad:
+- Si la diferencia de dígitos entre el cuadrado y el objetivo ($N$) es **impar**, se realiza un desplazamiento (ajuste $\times 10$) para normalizar la extracción.
+- Extracción simétrica mediante cálculo de índices con `Math.floor`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 2. Métodos Congruenciales
+* **Mixto:** $X_{n+1} = (aX_n + c) \pmod m$
+* **Multiplicativo:** $X_{n+1} = (aX_n) \pmod m$
+* **Aditivo:** Basado en la suma de términos anteriores.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Instalación y Desarrollo
 
-## Expanding the ESLint configuration
+1. **Clonar el repositorio:**
+   ```bash
+   git clone <url-del-repo>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Entorno de desarrollo:**
+    ```bash
+    npm install
+
+3. Ejecutar en modo desarrollo:
+
+    ```bash
+    npm run dev
+    
